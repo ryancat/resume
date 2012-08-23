@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[2]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}
+\lineunder 
+#2
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4\\
+\vspace*{5pt}
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-95pt}
+
+\contact{Xin Chen}
+{9244 Regents Road Apt-I, La Jolla, CA 92037 $\bullet$ (858) 888-3659 $\bullet$ xryanchen@gmail.com}
+
+\header{Education}
+
+\schoolwithcourses{University of California, San Diego}{La Jolla, CA}{Graduate student in Electrical and Computer Engineering Department, 2011-2013}
+{$\bullet$ Selected Coursework:}
+	\area{Communication Theory and System:}{ Information Theory $\cdot$ Random Processes $\cdot$ Digital Communication I, II $\cdot$ Antenna Systems
+	      and Applications $\cdot$ Communication Theory \& Modern Wireless Communications $\cdot$ Advanced Data Structures $\cdot$ Design \& Analysis of Algorithm $\cdot$ Server-side Web Applications $\cdot$ Intro to Embedded System}
+
+\schoolwithcourses{Shanghai Jiao Tong University}{Shanghai, China}{Bachelor of Science in Electrical and Computer Engineering, 2007-2011}
+{$\bullet$ Selected Coursework:}
+	\area{Electrical and Computer Engineering:}{ Computer Networks $\cdot$ Digital Signal Processing and Analysis 
+	      $\cdot$ Signal and Systems $\cdot$ Computer Organization $\cdot$ Digital Integration Circuits $\cdot$ Electronic Circuits $\cdot$ 
+	      Physical Principles Underlying Smart Devices $\cdot$ Semiconductor Devices $\cdot$ Microwave Engineering 
+	      $\cdot$ Electromagnetics $\cdot$ Programming \& Data Structures $\cdot$ Boundary Value Problems for Partial Differential Equations $\cdot$ Probabilistic Methods in Eng. $\cdot$ Discrete Mathematics $\cdot$ Applied Calculus II, III, IV $\cdot$ Professional Ethics $\cdot$ Advanced Technical Communication $\cdot$ Solid Mechanics}
+
+\header{Work \& Research Experience}
+\employer{Laserfiche Corporate}{Long Beach, Jun 2012 - present}{Full time Software Engineer intern}
+	\begin{achievements}
+	\item Developing the web form application with HTML5 Canvas, jQuery kinetic, javascript and C\# in form team for laserfiche Business Process Management (BPM) product series. Finished the implementation for interfaces from front-end and back-end, including dialogs, forms, xpath-builder and supports on tablets.
+	\item Using ASP .NET MVC 3 framework as project structure, and ADO .NET Entity Framework 4.1 as the ORM framework. HTML5 new technologies and 				JavaScript are widely used in the project.
+	\end{achievements}
+
+\employer{National Instruments Corporation}{Shanghai, Dec 2010 - Jun 2011}{Full time Applications Engineer intern}
+	\begin{achievements}
+	\item Solved industiral problems for over 100 customers in real applications with professional skills, including software
+	      programming (LabVIEW, C, Matlab, MySQL, CVI, TestStand, Vision Builder for Automated Inspection, OPC server, etc), hardware
+	      configuration (PXI/PCI buses, RF processing instruments, FPGA, Signal Conditioning eXtensions for Instrumentation
+	      (SCXI), Data Acquisition instruments (DAQ), Wireless Sensor Network(WSN), etc) and testing/debugging for returned instruments. 
+	\item Achieved the title of Certified LabVIEW Associate Developer granted by National Instrument (SN: 100-311-1085).
+	\item Had excellent teamwork with colleagues in NI tech show. Got good feedback from customers, team members and department manager.
+	\end{achievements}
+
+\employer{Honeywell International Inc}{Shanghai, Apr 2010 - Jun 2010} {Part time Marketing assistant intern}
+	\begin{achievements}
+	\item Optimized and Translated a series of technical documents for new products handbook.
+	\item Managed the documentation and electrical database with Microsoft Office softwares.
+	\item Won Honeywell Innovators Scholarship selected by Honeywell globally from their best interns. 
+	\end{achievements}
+
+\employer{UC San Diego, Cooperation with Chair in Department of Anesthesiology for a sensor system project}{La Jolla, Mar 2012 - present}{System Software Engineer}
+	\begin{achievements}
+	\item Impelemented a pulse pressure sensoring and data acquisition system with LabVIEW and NI-DAQ instruments.
+	\item Successfully record and process the data from clinical experiments and satisfied the system requirements.
+	\end{achievements}
+
+\employer{UC San Diego, Course project on Embedded System design for lower power consumption}{La Jolla, Jan 2012 - Mar 2012}{Teamwork Research}
+	\begin{achievements}
+	\item Designed new frequency allocation policy on Qualcomm’s snapdragon MSM8660 Mobile development platform for lower energy consumption. 
+	\item Rich literiture research and over 600 lines programming in C and shell script resulted in an efficient policy ranked 10\% over class.
+	\end{achievements}
+
+\employer{Shanghai Jiao Tong University, Automobile vehicle research center}{Shanghai, Sep 2010 - Dec 2010}{Capstone Design team leader}
+	\begin{achievements}
+	\item Designed and constructed a light weight unmanned aerial vehicle embedded control system. Responsible for the software part that built based on TinyOS and implemented by XML and C, and ran in Linux system with customized UI. 
+	\item Got grade A in Capstone design and enrolled the 4th National Undergraduate Innovative Project in China. 
+	\end{achievements}
+
+%\employer{Shanghai Jiao Tong University, Wireless Network lab}{Shanghai, Nov 2009 - Nov 2010}
+%	{Research Assistant}
+%	\begin{achievements}
+%	\item Researched on communication systems and relay architecture (mainly in MAC layer design) in LTE-Advanced
+%	      background. A hybrid relay design has been proposed for further study.
+%	\item Finished a communication project to verify and prove the robustness of different CRC error
+%	      detection methods in communication technology, including full documentation and 5000+ lines coding
+%	      with C++.
+%	\end{achievements}
+
+\header{Skills}
+\begin{achievements}
+\item Proficiency in Linux environment programming with C++, C\#, JavaScript, JSP, SQL, LabVIEW; Familiarity with C Shell, PHP, HTML; basic in Python, VHDL.
+\item Familiarity with PXI/PCI, GPIB, motion/vision systems, Data acquisition/processing systems and common industrial communication hardwares.
+\item Familiarity with Matlab, Mathematica, ADS, PSPICE and other engineering software tools in ECE field.
+
+\end{achievements}
+
+
+\end{document}
